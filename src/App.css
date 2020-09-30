@@ -1,38 +1,70 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
   color: white;
+  width: 350px;
+  height: 400px;
+  background-color: #333;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.App-link {
-  color: #61dafb;
+#display {
+  grid-area: 1 / 1 / 2 / 5;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#reset {
+  grid-area: 2 / 1 / 3 / 3;
+}
+#divide {
+  grid-area: 2 / 3 / 3 / 4;
+}
+#multiply {
+  grid-area: 2 / 4 / 3 / 5;
+}
+#subtract {
+  grid-area: 3 / 4 / 4 / 5;
+}
+#add {
+  grid-area: 4 / 4 / 5 / 5;
+}
+#equals {
+  grid-area: 5 / 4 / 7 / 5;
+}
+#seven {
+  grid-area: 3 / 1 / 4 / 2;
+}
+#eigth {
+  grid-area: 3 / 2 / 4 / 3;
+}
+#nine {
+  grid-area: 3 / 3 / 4 / 4;
+}
+#four {
+  grid-area: 4 / 1 / 5 / 2;
+}
+#five {
+  grid-area: 4 / 2 / 5 / 3;
+}
+#six {
+  grid-area: 4 / 3 / 5 / 4;
+}
+#one {
+  grid-area: 5 / 1 / 6 / 2;
+}
+#two {
+  grid-area: 5 / 2 / 6 / 3;
+}
+#three {
+  grid-area: 5 / 3 / 6 / 4;
+}
+#decimal {
+  grid-area: 6 / 3 / 7 / 4;
+}
+#zero {
+  grid-area: 6 / 1 / 7 / 3;
 }
