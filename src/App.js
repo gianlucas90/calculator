@@ -5,51 +5,55 @@ function App() {
   return (
     <div className="App">
       <div id="display">Display</div>
-      <div id="reset">Ac</div>
-      <div id="add" class="operators">
+      <div id="reset" className="btn">
+        Ac
+      </div>
+      <div id="add" className="btn btn-operator">
         +
       </div>
-      <div id="subtract" class="operators">
+      <div id="subtract" className="btn btn-operator">
         -
       </div>
-      <div id="multiply" class="operators">
-        *
+      <div id="multiply" className="btn btn-operator">
+        x
       </div>
-      <div id="divide" class="operators">
+      <div id="divide" className="btn btn-operator">
         /
       </div>
-      <div id="equals">=</div>
-      <div id="decimal" class="number">
+      <div id="equals" className="btn">
+        =
+      </div>
+      <div id="decimal" className="btn btn-number">
         .
       </div>
-      <div id="zero" class="number">
+      <div id="zero" className="btn btn-number">
         0
       </div>
-      <div id="one" class="number">
+      <div id="one" className="btn btn-number">
         1
       </div>
-      <div id="two" class="number">
+      <div id="two" className="btn btn-number">
         2
       </div>
-      <div id="three" class="number">
+      <div id="three" className="btn btn-number">
         3
       </div>
-      <div id="four" class="number">
+      <div id="four" className="btn btn-number">
         4
       </div>
-      <div id="five" class="number">
+      <div id="five" className="btn btn-number">
         5
       </div>
-      <div id="six" class="number">
+      <div id="six" className="btn btn-number">
         6
       </div>
-      <div id="seven" class="number">
+      <div id="seven" className="btn btn-number">
         7
       </div>
-      <div id="eigth" class="number">
+      <div id="eigth" className="btn btn-number">
         8
       </div>
-      <div id="nine" class="number">
+      <div id="nine" className="btn btn-number">
         9
       </div>
     </div>
